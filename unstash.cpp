@@ -3,8 +3,8 @@ Decrypt IBM KDB STH files.
 
 Stash files are used by IBM WebSphere and WebSEAL.
 
-It's possible to lose the password so use this utility to decrypt it, it has happened to me before!
-Not a real decryption, it's just a simple XOR of each character in the sth file with the value of 0xf5.
+It's possible to lose the password so use this utility to decrypt the stash file, it has happened to me before!
+Not a real encryption, it's just a simple XOR of each byte in the sth file with the value of 0xf5.
 (c) By Shoestring
 
 g++ -o <output> <unstash.cpp>
